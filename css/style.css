@@ -26,36 +26,43 @@
     text-align: center;
   }
   
-  .p6 { grid-area: p6; 
+  #p6 { grid-area: p6; 
 background-color: aqua;
 border: 1px solid black;
 }
   
-  .p1 { grid-area: p1; 
+  #p1 { grid-area: p1; 
 background-color: azure;
 }
   
-  .p2 { grid-area: p2; 
+  #p2 { grid-area: p2; 
 background-color: red;
 }
   
-  .p3 { grid-area: p3; 
+  #p3 { grid-area: p3; 
 background-color: yellow;
 }
   
-  .p4 { grid-area: p4; }
+  #p4 { grid-area: p4; }
   
-  .p5 { grid-area: p5; }
+  #p5 { grid-area: p5; }
   
-  .c1 { grid-area: c1; }
+  #c1 { grid-area: c1; }
   
-  .c2 { grid-area: c2; }
+  #c2 { grid-area: c2; }
   
-  .c3 { grid-area: c3; }
+  #c3 { grid-area: c3; }
   
-  .c4 { grid-area: c4; }
+  #c4 { grid-area: c4; }
   
-  .c5 { grid-area: c5; }
+  #c5 { grid-area: c5; }
   
-  .c6 { grid-area: c6; }
+  #c6 { grid-area: c6; }
+
+  .item {  
+
+    color: black;
+    text-align: center;
+    font-size: 30px;
+  }
   

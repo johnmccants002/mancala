@@ -25,22 +25,36 @@
     margin-bottom: 20px;
     text-align: center;
   }
+
+  .item {  
+
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    background-color: white;
+  }
   
   #p6 { grid-area: p6; 
 background-color: aqua;
 border: 1px solid black;
 }
+
   
   #p1 { grid-area: p1; 
-background-color: azure;
+
 }
   
   #p2 { grid-area: p2; 
-background-color: red;
+
 }
   
   #p3 { grid-area: p3; 
-background-color: yellow;
+
+}
+
+.bottom-text { 
+    margin: auto;
+    text-align: center;
 }
   
   #p4 { grid-area: p4; }
@@ -57,12 +71,9 @@ background-color: yellow;
   
   #c5 { grid-area: c5; }
   
-  #c6 { grid-area: c6; }
+  #c6 { grid-area: c6; 
+background-color: orange;
+}
 
-  .item {  
 
-    color: black;
-    text-align: center;
-    font-size: 30px;
-  }
   

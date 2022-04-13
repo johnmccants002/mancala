@@ -6,6 +6,10 @@ Versions of the game date back to the 7th century and evidence suggests the game
 
 The mancala games are a family of two-player turn-based strategy board games played with small stones, beans, or seeds and rows of holes or pits in the earth, a board or other playing surface. The objective is usually to capture all or some set of the opponent's pieces.
 
+## Screenshot
+
+![Screenshot](Screenshot.png)
+
 ## Technologies Used
 
 - Javascript

@@ -25,6 +25,12 @@
     margin: auto;
     margin-bottom: 20px;
     text-align: center;
+    font-size: 68px;
+  }
+
+  h2 {
+    padding-top: 20px;
+    font-size: 36px;
   }
   
   #p6 { grid-area: p6; 
@@ -70,20 +76,17 @@
   color: black;
   text-align: center;
   font-size: 30px;
-  
-
-
 }
 
 .large {  
   border-radius: 25px;
-  border: 1px solid black;
+  border: 2px solid black;
   margin: 10px;
 }
 
 .small { 
   border-radius: 25px;
-  border: 1px solid black;
+  border: 2px solid black;
   margin: 10px;
 }
 

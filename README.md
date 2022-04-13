@@ -8,7 +8,7 @@ The mancala games are a family of two-player turn-based strategy board games pla
 
 ## Screenshot
 
-![Screenshot](Screenshot.png)
+![Screenshot](Screenshot.png =20x100)
 
 ## Technologies Used
 

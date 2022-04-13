@@ -12,12 +12,29 @@
       "c5 p1"
       "c6 c6";
 
-      background-color:  aliceblue;
       border: 1px solid black;
-      width: 400px; 
-      height: 800px;
+      width: 300px; 
+      height: 600px;
       margin: auto;
- 
+
+      background-image: url("/woodboard.jpeg");
+
+      /* background: #C19A6B;
+      color: #A37C4D;
+      background: linear-gradient(to bottom, #C19A6B 0%, #B28B5C 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C19A6B), color-stop(100%, #B28B5C));
+      background: -webkit-linear-gradient(top, #C19A6B 0%, #B28B5C 100%);
+      background: -moz-linear-gradient(top, #C19A6B 0%, #B28B5C 100%);
+      background: -o-linear-gradient(top, #C19A6B 0%, #B28B5C 100%);
+      background: -ms-linear-gradient(top, #C19A6B 0%, #B28B5C 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C19A6B', endColorstr='#B28B5C', GradientType=0);
+      border: 1px solid #A37C4D;
+      text-shadow: 0 1px 0 #D0A97A;
+      -webkit-text-shadow: 0 1px 0 #D0A97A;
+      -moz-text-shadow: 0 1px 0 #D0A97A;
+      box-shadow: inset 0 1px 0 #D0A97A;
+      -webkit-box-shadow: inset 0 1px 0 #D0A97A;
+      -moz-box-shadow: inset 0 1px 0 #D0A97A; */
   }
 
   h1 {
@@ -25,18 +42,9 @@
     margin-bottom: 20px;
     text-align: center;
   }
-
-  .item {  
-
-    color: black;
-    text-align: center;
-    font-size: 30px;
-    background-color: white;
-  }
   
   #p6 { grid-area: p6; 
-background-color: aqua;
-border: 1px solid black;
+/* background-color: aqua; */
 }
 
   
@@ -69,10 +77,24 @@ border: 1px solid black;
   
   #c4 { grid-area: c4; }
   
-  #c5 { grid-area: c5; }
+  #c5 { grid-area: c5; 
+  }
   
   #c6 { grid-area: c6; 
-background-color: orange;
+/* background-color: orange; */
+}
+
+.item {  
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  /* background-color: white; */
+
+
+}
+
+body {
+  background-color: skyblue;
 }
 
 

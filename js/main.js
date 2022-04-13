@@ -21,6 +21,7 @@ let boardObject = {
 let keyArray = ["p1", "p2", "p3", "p4", "p5", "p6", "c1", "c2", "c3", "c4", "c5", "c6"];
 let playerArray = ["p1", "p2", "p3", "p4", "p5"];
 let computerArray = ["c1", "c2", "c3", "c4", "c5"];
+myAudio = new Audio('mancala.m4a'); 
 function setupGameboard() {
     $(".item").each(function(index, element) {
         $(element).text(boardObject[element.id]);
@@ -135,11 +136,15 @@ return;
         boardObject[newArray[i]] += 1;
         setTimeout(function () {
             $("#" + newArray[i]).text(boardObject[newArray[i]]);
+            myAudio.play()
+            if (i == number - 1) {
+                checkMoves(false, lastSpot);
+            }
         }, waitTime)
-        waitTime = waitTime += 500;
+        waitTime = waitTime += 1500;
         lastSpot = newArray[number - 1];
     }
-    checkMoves(false, lastSpot);
+
     
 
 }
@@ -168,14 +173,18 @@ for (let i = 0; i < number; i++ ) {
 boardObject[newArray[i]] += 1;
 setTimeout(function () {
     $("#" + newArray[i]).text(boardObject[newArray[i]]);
+    myAudio.play();
+    if (i == number - 1) {
+        checkMoves(true, lastSpot);
+    }
 }, waitTime)
-waitTime = waitTime += 500
+waitTime = waitTime += 1500
 
 console.log("This is the last piece in the array to be added to" + newArray[number - 1]);
 lastSpot = newArray[number - 1];
 }
 
-checkMoves(true, lastSpot);
+
 });
 
 

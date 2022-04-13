@@ -3,9 +3,7 @@
 let playerScore = 0;
 let computerScore = 0;
 let gameBoard = [4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 0];
-
 let playerTurn = true;
-
 let boardObject = {
     "p1": 4,
     "p2": 4,
@@ -20,17 +18,12 @@ let boardObject = {
     "c5": 4,
     "c6": 0,
 }
-
 let keyArray = ["p1", "p2", "p3", "p4", "p5", "p6", "c1", "c2", "c3", "c4", "c5", "c6"];
 let playerArray = ["p1", "p2", "p3", "p4", "p5"];
 let computerArray = ["c1", "c2", "c3", "c4", "c5"];
-let loadingStrings = ["Loading", "Loading.", "Loading..", "Loading..."]
 function setupGameboard() {
     $(".item").each(function(index, element) {
         $(element).text(boardObject[element.id]);
-        console.log(element.id);
-        console.log(boardObject[element.id]);
-        console.log(index);
     })
 }
 
@@ -61,10 +54,6 @@ function calculateWinner() {
                         
                     }
         }, 1000)
-    
-
-
-
 }
 
 function playerHolesTotal() {
@@ -150,15 +139,11 @@ return;
         waitTime = waitTime += 500;
         lastSpot = newArray[number - 1];
     }
-
-    console.log("This was the computer move " + id);
-    console.log("This is the last spot for computer" + lastSpot);
-
     checkMoves(false, lastSpot);
     
 
 }
-// Index of boardObject keys compared to number value ex C4  4value 9spot total - value > spot
+
 $(".item").on("click", function(e) {
    let waitTime = 500
    let id = e.target.id;
@@ -173,9 +158,6 @@ $(".item").on("click", function(e) {
    let spot = keyArray.indexOf(id);
    let total = keyArray.length;
    let lastSpot;
-   console.log("This is the length " + total);
-   console.log("This is the spot " + spot);
-   console.log("This is the number " + number);
 $("#" + id).text("0");
 boardObject[id] = 0;
 let newArray = keyArray.slice(spot + 1).concat(keyArray);
@@ -193,14 +175,7 @@ console.log("This is the last piece in the array to be added to" + newArray[numb
 lastSpot = newArray[number - 1];
 }
 
-
 checkMoves(true, lastSpot);
-
-console.log(playerTurn);
-
-console.log(boardObject);
-
-
 });
 
 

@@ -1,5 +1,4 @@
 // Properties
-
 let playerScore = 0;
 let computerScore = 0;
 let gameBoard = [4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 0];
@@ -36,23 +35,19 @@ function calculateWinner() {
             let playerKey = playerArray[i];
             cpMancalaTotal += boardObject[key];
             plMancalaTotal += boardObject[playerKey];
-
             $("#" + key).text(0);
             $("#" + playerKey).text(0);
         }
-
         setTimeout(function() {
             $("#p6").text(plMancalaTotal);
             $("#c6").text(cpMancalaTotal);
-
             if (cpMancalaTotal > plMancalaTotal) {
                 $(".bottom-text").text("Computer has won");
                     } else if (plMancalaTotal > cpMancalaTotal) {
                   
                 $(".bottom-text").text("You have won");
                     } else {
-                        $(".bottom-text").text("Tie Game");
-                        
+                        $(".bottom-text").text("Tie Game");                   
                     }
         }, 1000)
 }
@@ -62,8 +57,6 @@ function playerHolesTotal() {
     for (let i = 0; i < playerArray.length; i++) {
         total = total + boardObject[playerArray[i]];
     }
-
-    console.log("this is the player total " + total);
     return total;
 }
 
@@ -72,8 +65,6 @@ function computerHolesTotal() {
     for (let i = 0; i < computerArray.length; i++) {
         total = total + boardObject[computerArray[i]];
     }
-
-    console.log("this is the computer holes total " + total);
     return total;
 }
 
@@ -82,7 +73,6 @@ function checkMoves(player, lastSpot) {
     if (player == true) {
         let playerTotal = playerHolesTotal();
         if (playerTotal == 0) {
-    
            calculateWinner();
         } else if (lastSpot == "p6") {
             playerTurn = true;
@@ -109,14 +99,9 @@ function checkMoves(player, lastSpot) {
     }
 }
 
-
-
-
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
   }
-
-setupGameboard()
 
 function computerMove() {
     let waitTime = 500;
@@ -126,7 +111,7 @@ function computerMove() {
     let spot = keyArray.indexOf(id);
     let number = $("#" + id).text();
     if (number == 0 || id == "c6") {
-computerMove()
+    computerMove()
 return;
     }
     $("#" + id).text("0");
@@ -144,9 +129,6 @@ return;
         waitTime = waitTime += 1500;
         lastSpot = newArray[number - 1];
     }
-
-    
-
 }
 
 $(".item").on("click", function(e) {
@@ -166,9 +148,6 @@ $(".item").on("click", function(e) {
 $("#" + id).text("0");
 boardObject[id] = 0;
 let newArray = keyArray.slice(spot + 1).concat(keyArray);
-
-
-console.log("This is the newArray " + newArray);
 for (let i = 0; i < number; i++ ) {
 boardObject[newArray[i]] += 1;
 setTimeout(function () {
@@ -179,12 +158,9 @@ setTimeout(function () {
     }
 }, waitTime)
 waitTime = waitTime += 1500
-
-console.log("This is the last piece in the array to be added to" + newArray[number - 1]);
 lastSpot = newArray[number - 1];
 }
-
-
 });
 
+setupGameboard()
 

@@ -22,3 +22,15 @@ The mancala games are a family of two-player turn-based strategy board games pla
 [HOW TO PLAY CLICK HERE](https://harriscenter.org/wp-content/uploads/2020/03/mancala_rules.pdf)
 
 # [CLICK HERE TO PLAY](https://mancalabyjohn.netlify.app/)
+
+
+## Future Iterations
+
+#### Add Pebble Images
+
+Add the hole images to match the right amount of pebbles.
+
+Add peaceful music to the background.
+
+Add indicators to show what holes the player can select.
+

@@ -11,14 +11,11 @@
       "c4 p2"
       "c5 p1"
       "c6 c6";
-
       border: 1px solid black;
       width: 300px; 
       height: 600px;
       margin: auto;
-
       background-image: url("/woodboard.jpeg");
-
   }
 
   h1 {

@@ -4,11 +4,11 @@ The mancala games are a family of two-player turn-based strategy board games pla
 
 Versions of the game date back to the 7th century and evidence suggests the game existed in Ancient Egypt. It is among the oldest known games to still be widely played today.
 
-The mancala games are a family of two-player turn-based strategy board games played with small stones, beans, or seeds and rows of holes or pits in the earth, a board or other playing surface. The objective is usually to capture all or some set of the opponent's pieces.
-
 ## Screenshot
 
 ![Screenshot](Screenshot2.png)
+
+![ScreenshotGrid](gridlayout.png)
 
 ## Technologies Used
 
@@ -16,6 +16,7 @@ The mancala games are a family of two-player turn-based strategy board games pla
 - jQuery
 - HTML
 - CSS
+- Layoutit
 
 ## Getting Started
 
@@ -26,11 +27,12 @@ The mancala games are a family of two-player turn-based strategy board games pla
 
 ## Future Iterations
 
-#### Add Pebble Images
-
-Add the hole images to match the right amount of pebbles.
+Add Pebble Images
 
 Add peaceful music to the background.
 
 Add indicators to show what holes the player can select.
+
+Make it mobile responsive.
+
 
